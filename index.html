@@ -8,7 +8,10 @@
   <meta property="og:title" content="Squid Printer — Regalos personalizados" />
   <meta property="og:description" content="Regalos hechos a mano, diseños únicos y personalizados. Mira el catálogo y haz tu pedido por WhatsApp." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="/og-image.jpg" />
+  <meta property="og:image" content="assets/og-image.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <meta name="theme-color" content="#e11d48" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,7 +53,7 @@
     .floating-wa svg{width:20px;height:20px;fill:currentColor}
     @media (max-width: 900px){.hero-grid{grid-template-columns:1fr}.card{grid-column:span 6}}
     @media (max-width: 640px){.grid{grid-template-columns:repeat(6,1fr)}.card{grid-column:span 6}.nav{padding:10px 0}.btn{padding:9px 12px}.pdf-frame{height:65vh}}
-  .brand svg{height:28px;width:auto;display:block} .logo-hero svg{width:100%;max-width:200px;margin:0 auto;display:block} </style>
+  .brand svg{height:28px;width:auto;display:block} .logo-hero .logo-img{width:100%;max-width:220px;margin:0 auto;display:block} </style>
 </head>
 <body>
   <!-- WhatsApp flotante: reemplaza 34XXXXXXXXX con tu número -->
@@ -64,7 +67,10 @@
 
   <header>
     <div class="container nav">
-      <div class="brand" style="gap:10px"><svg viewBox="0 0 160 64" aria-label="Squid Printer logo" role="img" style="height:28px;width:auto;display:block"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#121212"/><stop offset="1" stop-color="#1a1a1a"/></linearGradient></defs><g fill="url(#g)"><path d="M8 18a10 10 0 0 1 10-10h40c2.2 0 4.3.9 5.9 2.5l30.6 30.6a10 10 0 0 1 0 14.1l-6.2 6.2a10 10 0 0 1-14.1 0L14.5 24a10 10 0 0 1-2.5-6z"></path><circle cx="24" cy="24" r="6" fill="#0f0f0f"></circle></g><g><circle cx="106" cy="52" r="6" fill="#F6D34F"></circle><circle cx="126" cy="52" r="6" fill="#FF4FA3"></circle><circle cx="146" cy="52" r="6" fill="#27D7C8"></circle></g></svg> <span style="font-weight:800">Squid Printer</span></div>
+      <div class="brand" style="gap:10px;align-items:center">
+        <img src="assets/logo.png" alt="Squid Printer" style="height:24px;width:auto;display:block">
+        <span style="font-weight:800">Squid Printer</span>
+      </div>
       <div class="nav-cta">
         <a class="icon-btn" href="https://www.instagram.com/squid.printer?igsh=ZXJ4ZDF0bmhueHQ%3D&utm_source=qr" target="_blank" aria-label="Instagram" rel="noopener" title="Instagram">
           <!-- Instagram SVG -->
@@ -95,22 +101,7 @@
         </div>
       </div>
       <div class="logo-hero" aria-hidden="false" role="img" aria-label="Logotipo Squid Printer">
-        <!-- SVG inline (robusto, siempre visible) -->
-        <svg viewBox="0 0 512 256" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
-          <!-- Etiqueta base -->
-          <g fill="#111111">
-            <path d="M60 98c0-24 19-43 43-43h138c11 0 21 4 29 12l98 98c16 16 16 41 0 57l-8 8c-16 16-41 16-57 0L89 127c-18-18-29-29-29-29z"/>
-            <circle cx="125" cy="120" r="18" fill="#0f0f0f"/>
-            <!-- Rayas -->
-            <rect x="280" y="62" width="20" height="46" rx="10"/>
-            <rect x="318" y="74" width="20" height="38" rx="10"/>
-            <rect x="356" y="86" width="20" height="30" rx="10"/>
-          </g>
-          <!-- Puntos de color -->
-          <circle cx="332" cy="214" r="16" fill="#F6D34F"/>
-          <circle cx="372" cy="214" r="16" fill="#FF4FA3"/>
-          <circle cx="412" cy="214" r="16" fill="#27D7C8"/>
-        </svg>
+        <img src="assets/logo.png" alt="Logo Squid Printer" class="logo-img" loading="eager" />
       </div>
     </div>
   </section>
